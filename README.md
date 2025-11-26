@@ -8,7 +8,7 @@ To design a variety of machine learning models to determine what features are mo
 
 Dataset
 
-The dataset comes from a survey taken by 2000+ undergraduate residents at this university. The models focus specifically on features regarding which building the resident lives in, type of living accommodation, Resident Assistant (RA) feedback, event feedback, and residential experience/satisfaction. The building and living accommodation columns were categorical, while the remaining variables are on a "strongly disagree" to "strongly agree" scale.
+The dataset comes from a survey taken by 2000+ undergraduate residents at this university. The models focus specifically on features regarding which building the resident lives in, type of living accommodation, Resident Assistant (RA) feedback, event feedback, and residential experience/satisfaction. The building and living accommodation columns were categorical, while the remaining variables are on a "strongly disagree" to "strongly agree" scale. As with all projects involving survey data, there may be a bias due to subjective survey responses.
 
 Data Cleaning
 
@@ -55,22 +55,27 @@ Using the unscaled model, I generated coefficients, odds ratios, and p-values fo
 Residential Experience:
 | Feature | Coefficient | Odds Ratio | p-value |
 |---------|-------------|------------|---------|
-| My residential experience helps me explore different aspects of myself | 0.413 | 1.511 | 0.001 |
+| My residential experience helps me explore different aspects of myself* | 0.413 | 1.511 | 0.001 |
 | I am satisfied with my overall experience living in university housing | 0.128 | 1.136 | 0.267 |
 | My residential experience helps transition to social community | 0.061 | 1.063 | 0.600 |
 | My residential experience helps develop healthy wellness practices | -0.011 | 0.989 | 0.936 |
 
+example interpretations: A one point increase in being satisfied with overall experience (ex: agree ---> strongly agree) leads to an average of a 13.6% increase in retention. A one point increase in agreeing that residential experience helps develop healthy wellness practices leads to an average of a 1.1% decrease in retention. 
+
 Unit (names changed for privacy reasons):
 | Unit | Coefficient | Odds Ratio | p-value |
 |------|-------------|------------|---------|
-| Placeholder Commons | 1.160 | 3.190 | 0.002 |
+| Placeholder Commons* | 1.160 | 3.190 | 0.002 |
 | Unit A | 0.028 | 1.028 | 0.922 |
-| Unit C*** | 0 | 1.0 | NA |
+| Unit C** | 0 | 1.0 | NA |
 | Unit B | -0.081 | 0.922 | 0.750 |
 | Unit D | -0.445 | 0.641 | 0.075 |
 | Placeholder of Berkeley | -0.733 | 0.481 | 0.251 |
 
-(*** indicates a baseline to prevent multicollinearity)
+example interpretations: Living in Unit A leads to, on average, a 2.8% increase in retention compared to residents of Unit C. Living in Placeholder of Berkeley leads to, on average, a 51.9% decrease in retention compared to residents of Unit C.
+
+(* indicates a statistically significant feature)
+(** indicates a baseline to prevent multicollinearity)
 
 Conclusion
 

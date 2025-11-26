@@ -44,7 +44,6 @@ Using the scaled model, I computed the average absolute coefficient within each 
 | Living Accommodation   | 1.012                     |
 | Unit                   | 0.489                     |
 | Theme Program          | 0.375                     |
-| Intercept              | 0.156                     |
 | Residential Experience | 0.141                     |
 | Events                 | 0.119                     |
 | RA Feedback            | 0.109                     |

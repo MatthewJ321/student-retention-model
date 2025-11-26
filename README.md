@@ -37,7 +37,7 @@ Analysis
 I organized all predictors into six thematic groups, reflecting major aspects of students’ residential experiences:
 RA Feedback, Events, Residential Experience, Theme Program, Unit, Living Accommodation
 
-Using the scaled model, I computed the average absolute coefficient within each group to determine which themes had the strongest overall influence. Living accommodation had by far the largest effect magnitude, followed by building. Other features (RA feedback, events, and residential experience) had smaller effects in comparison. The table is shown below:
+Using the scaled model, I computed the average absolute coefficient within each group to determine which themes had the strongest overall influence. Living accommodation had by far the largest effect magnitude, followed by Unit. Other features (RA feedback, events, and residential experience) had smaller effects in comparison. The table is shown below:
 
 | Group                   | Mean Absolute Coefficient |
 |------------------------|---------------------------|
@@ -49,14 +49,14 @@ Using the scaled model, I computed the average absolute coefficient within each 
 | RA Feedback            | 0.109                     |
 
 
-Using the unscaled model, I generated coefficients, odds ratios, and p-values for all features to quantify two types of features: how a 1-point increase in each survey item affected the likelihood of returning or how a selection of a certain one-hot encoded variable compares to the baseline in terms of likelihood of returning . This analysis revealed which individual factors mattered most within each thematic category, and while not all tables can be shown due to privacy reasons, two of the tables (some tables are shortened and names changed) are shown below:
+Using the unscaled model, I generated coefficients, odds ratios, and p-values for all features to quantify two types of features: how a 1-point increase in each survey item affected the likelihood of returning or how a selection of a certain one-hot encoded variable compares to the baseline in terms of likelihood of returning . This analysis revealed which individual factors mattered most within each thematic category, and while not all tables can be shown due to privacy reasons, two of the tables (some tables are shortened and and names changed/redacted) are shown below:
 
 Residential Experience:
 | Feature | Coefficient | Odds Ratio | p-value |
 |---------|-------------|------------|---------|
-| My residential experience helps me explore different aspects of myself* | 0.413 | 1.511 | 0.001 |
+| My residential experience helps me explore (REDACTED)* | 0.413 | 1.511 | 0.001 |
 | I am satisfied with my overall experience living in university housing | 0.128 | 1.136 | 0.267 |
-| My residential experience helps transition to social community | 0.061 | 1.063 | 0.600 |
+| My residential experience helps transition to (REDACTED) | 0.061 | 1.063 | 0.600 |
 | My residential experience helps develop healthy wellness practices | -0.011 | 0.989 | 0.936 |
 
 example interpretations: A one point increase in being satisfied with overall experience (ex: agree ---> strongly agree) leads to an average of a 13.6% increase in retention. A one point increase in agreeing that residential experience helps develop healthy wellness practices leads to an average of a 1.1% decrease in retention. 
